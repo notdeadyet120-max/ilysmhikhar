@@ -1,0 +1,33 @@
+body {
+  background:
+    radial-gradient(circle at top left, #ffe4ef, transparent 40%),
+    radial-gradient(circle at bottom right, #ffd2e5, transparent 40%),
+    linear-gradient(135deg, #fff9fc, #ffe3ef);
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  background: linear-gradient(45deg, #ff4f92, #ff8eb7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass {
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.8);
+  box-shadow:
+    0 25px 60px rgba(255,120,180,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.love-btn {
+  background: linear-gradient(135deg, #ff6fa6, #ff4f92);
+  box-shadow: 0 15px 35px rgba(255,79,146,0.35);
+}
+
+.love-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+}
