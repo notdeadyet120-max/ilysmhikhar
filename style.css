@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fff0f6, #ffe4ec);
+  overflow: hidden;
+}
+
+/* floating emojis */
+.floaters {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  font-size: 22px;
+  opacity: 0.2;
+  animation: floatMove 10s linear infinite;
+}
+
+@keyframes floatMove {
+  from { transform: translateY(100vh); }
+  to { transform: translateY(-100vh); }
+}
+
+/* BOOK */
+.book {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PAGES */
+.page {
+  position: absolute;
+  width: 90%;
+  max-width: 700px;
+  padding: 40px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(20px);
+  border-radius: 25px;
+  box-shadow: 0 30px 80px rgba(255,100,160,0.25);
+
+  transform: rotateY(90deg);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.page.active {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+/* PAGE 2 SPECIAL LETTER */
+.letter-card {
+  text-align: left;
+}
+
+/* PROMISE BOX */
+.promise-box {
+  text-align: center;
+}
+
+/* BUTTON */
+.btn-love {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(45deg, #ff6fa6, #ff4f92);
+  color: white;
+  box-shadow: 0 10px 25px rgba(255,80,140,0.3);
+  transition: 0.3s;
+}
+
+.btn-love:hover {
+  transform: scale(1.1);
+}
+
+/* FINAL HEART POP */
+.hearts-pop {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+/* extra glow */
+h1, h2 {
+  color: #ff4f92;
+}
